@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyTorch & ML
+*.pt
+*.pth
+*.bin
+*.onnx
+checkpoints/
+wandb/
+runs/
+lightning_logs/
+
+# Datasets & Data
+*.csv
+*.txt
+*.json
+spa.csv
+cached_*
+huggingface/
+datasets/
+
+# Logs & Output
+*.log
+*.out
+results/
+outputs/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temporary files
+temp/
+tmp/
