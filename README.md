@@ -69,16 +69,26 @@ PyTorch-Transformer-From-Scratch/
 ├── Encoder-Decoder.py            # Full Transformer (NMT)
 ├── README.md
 └── requirements.txt
+```
 
-🚀 Quick Start
-Installation
-Bashgit clone https://github.com/YOURUSERNAME/PyTorch-Transformer-From-Scratch.git
+---
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+git clone https://github.com/YOURUSERNAME/PyTorch-Transformer-From-Scratch.git
 cd PyTorch-Transformer-From-Scratch
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install transformers datasets pandas numpy matplotlib
-Running the Models
-Python# Run Full Translation Model
+```
+
+### Running the Models
+
+```python
+# Run Full Translation Model
 python Encoder-Decoder.py
 
 # Run Encoder (Classification)
@@ -86,34 +96,42 @@ python Encoder.py
 
 # Run Decoder (Generation)
 python Decoder.py
+```
 
-🎯 Learning Objectives
+---
+
+## 🎯 Learning Objectives
+
 This repository helps you understand:
+- How Multi-Head Attention really works
+- Difference between Encoder and Decoder masking
+- Proper implementation of Positional Encoding
+- Training strategies for Seq2Seq models
+- Masking techniques (padding + causal)
 
-How Multi-Head Attention really works
-Difference between Encoder and Decoder masking
-Proper implementation of Positional Encoding
-Training strategies for Seq2Seq models
-Masking techniques (padding + causal)
+---
 
+## 🔮 Future Improvements
 
-🔮 Future Improvements
+- [ ] Add Beam Search decoding
+- [ ] Implement Rotary Embeddings (RoPE)
+- [ ] Add model checkpointing & logging (WandB)
+- [ ] Larger scale experiments (d_model=512)
+- [ ] Pre-training + Fine-tuning scripts
+- [ ] Convert to `nn.Transformer` compatible interface
 
- Add Beam Search decoding
- Implement Rotary Embeddings (RoPE)
- Add model checkpointing & logging (WandB)
- Larger scale experiments (d_model=512)
- Pre-training + Fine-tuning scripts
- Convert to nn.Transformer compatible interface
+---
 
+## 📚 References
 
-📚 References
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Vaswani et al., 2017)
+- The Annotated Transformer (Harvard NLP)
+- PyTorch Official Documentation
 
-Attention Is All You Need (Vaswani et al., 2017)
-The Annotated Transformer (Harvard NLP)
-PyTorch Official Documentation
+---
 
+## 🤝 Contributing
 
-🤝 Contributing
-Feel free to open issues or submit pull requests. This is primarily an educational project — improvements, bug fixes, and better documentation are highly welcome!
-⭐ Star this repo if you found it helpful!
+Feel free to open issues or submit pull requests. This is primarily an **educational project** — improvements, bug fixes, and better documentation are highly welcome!
+
+## ⭐ Star this repo if you found it helpful!
